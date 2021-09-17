@@ -2,3 +2,5 @@
 /node_modules
 /private/
 /.well-known/
+
+docker-compose.override.yml

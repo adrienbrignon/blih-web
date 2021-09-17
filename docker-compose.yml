@@ -1,0 +1,7 @@
+version: '3'
+services:
+
+  blih:
+    build: .
+    extra_hosts:
+      - 'blih.epitech.eu: 163.5.42.32'

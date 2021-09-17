@@ -31,8 +31,8 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(staticify.middleware);
 
-const VERSION = '2.2.1'
-const SERVER_PORT = 1337
+const VERSION = '2.2.2'
+const SERVER_PORT = 3000
 
 app.get('/', (req, res) => {
     res.render(__dirname + '/public/index.ejs', {
@@ -177,6 +177,7 @@ function blih(method, url, signed_data, res) {
         method: method,
         url: 'https://blih.epitech.eu' + url,
         body: parsed_body,
+        rejectUnauthorized: false,
         timeout: 5000
     }
 

@@ -1,0 +1,15 @@
+.git/
+
+logs/
+node_modules/
+
+.env
+.gitignore
+.eslintignore
+.eslintignorerc.js
+
+README.md
+npm-debug.log
+yarn-error.log
+docker-compose.yml
+docker-compose.override.yml
